@@ -1,8 +1,9 @@
-resource "azurerm_storage_account" "st01" {
-  for_each                 = var.st_map
+resource "azurerm_storage_account" "Hatya" {
+  for_each                 = var.Storage_details
   name                     = each.value.name
   resource_group_name      = each.value.resource_group_name
   location                 = each.value.location
   account_tier             = each.value.account_tier
   account_replication_type = each.value.account_replication_type
+
 }

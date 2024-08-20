@@ -1,2 +1,6 @@
-variable "rg_details" {}
-variable "st_details" {}
+variable "rg_details" {
+    type = map(any)
+}
+variable "st_details" {
+    type = map(any)
+}
