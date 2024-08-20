@@ -1,3 +1,3 @@
 variable "rg_map" {
-  type = map(any)
+    type = map(any)
 }
