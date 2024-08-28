@@ -10,6 +10,7 @@ module "SA_Module" {
 }
 
 module "Virtual_Network" {
+  depends_on = [ module.rg_Module ]
   source       = "../../Module/Azure_Virtual_Network"
   vnet_details = var.vnets
 }
